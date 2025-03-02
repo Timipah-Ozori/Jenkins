@@ -108,3 +108,97 @@ sudo ufw reload
 http://13.61.179.227:8080
 sudo netstat -tulnp | grep 8080
 ping 13.61.179.227
+sudo apt-get update -y
+sudo apt-get install ca-certificates curl gnupg
+sudo install -m 0755 -d /etc/apt/keyrings
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+sudo chmod a+r /etc/apt/keyrings/docker.gpg
+echo   "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \
+  $(. /etc/os-release && echo "$VERSION_CODENAME") stable" |   sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+sudo apt-get update -y
+sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin -y
+sudo systemctl status docker
+chmod u+x docker.sh
+sudo chmod u+x docker.sh
+ls
+touch docker.sh
+vi docker.sh 
+chmod u+x docker.sh
+./docker.sh
+touch dockerfile
+vi dockerfile 
+vim index.html 
+code .
+ls
+sudo snap install code
+sudo snap install code --classic
+code .
+echo $PATH | grep vscode
+code .
+[200~code --remote ssh-remote+user@server-ip /path/to/project
+~code --remote ssh-remote+user@172.31.27.184 /path/to/project
+which code
+export PATH=$PATH:/snap/bin
+code --version
+echo 'export PATH=$PATH:/snap/bin' >> ~/.bashrc
+source ~/.bashrc
+code --remote ssh-remote+user@172.31.27.184 /path/to/project
+ls
+git push
+git init
+ls
+git push
+git remote add origin https://github.com/Timipah-Ozori/Jenkins.git
+git remote -v
+git add .
+git commit -m "first commit"
+git status
+git reset --soft HEAD~1
+git reset --hard HEAD~1
+git status
+ls
+ls -la | grep snap
+rm snap
+[200~rm -r snap
+rm -r snap
+ls
+git commit -m "first commit"
+git add .
+git status
+[200~ls -la | grep snap
+~ls -la | grep snap
+ls
+git log --oneline -- Jenkinsfile
+git status
+ls
+vim docker.sh 
+rm ~/.lesshst
+git status
+rm ~/.viminfo
+ls
+git status
+git add .
+git status
+clear
+git commit -m "First commit"
+git branch -M main
+git push -u origin main
+git config --global credential.helper store
+git push -u origin main
+git pull origin main --rebase
+
+ls
+mv dockerfile Dockerfile
+ls
+git add .
+ls
+git status
+git commit -m "renamed Dockerfile"
+git push 
+git push -u origin main
+clear
+git push -u origin main
+git reset --soft HEAD~1
+git rm --cached .git-credentials
+rm .git-credentials
+git commit -m "renamed Dockerfile"
